@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="drawerMenuArray">
+        <item>@string/perfumes</item>
+        <item>@string/hair_perfumes</item>
+        <item>@string/brands</item>
+        <item>@string/magazine</item>
+        <item>@string/languages</item>
+        <item>@string/currencies</item>
+    </string-array>
+
+    <string-array name="drawerSubMenuPerfumes">
+        <item>@string/women</item>
+        <item>@string/men</item>
+        <item>@string/moods</item>
+        <item>@string/by_notes</item>
+        <item>@string/shop_by_price</item>
+    </string-array>
+
+    <string-array name="drawerSubMenuLanguage">
+        <item>English</item>
+        <item>Arabic</item>
+    </string-array>
+
+    <string-array name="drawerSubMenuCurrencies">
+        <item>BHD</item>
+        <item>AED</item>
+        <item>KWD</item>
+        <item>OMR</item>
+        <item>SAR</item>
+    </string-array>
+
+
+</resources>

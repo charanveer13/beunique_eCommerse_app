@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_190sdp"
+        android:background="@color/magazine_row_color"
+        android:padding="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/iv_magazine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignEnd="@+id/iv_magazine"
+            android:layout_alignTop="@+id/iv_magazine"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/share_background_drawable"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_share" />
+
+        <com.smartit.beunique.components.BUniqueTextView
+            android:id="@+id/tv_title_article"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/iv_magazine"
+            android:layout_below="@+id/iv_magazine"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:singleLine="true"
+            android:text="TITLE OF ARTICLE"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <com.smartit.beunique.components.BUniqueTextView
+            android:id="@+id/tv_title_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/iv_magazine"
+            android:layout_alignStart="@+id/tv_title_article"
+            android:layout_below="@+id/tv_title_article"
+            android:maxLines="3"
+            android:text="Fragrence reflect your personal style it, also has a strong influnce while others from a view about..."
+            android:textSize="@dimen/_11ssp" />
+
+        <com.smartit.beunique.components.BUniqueTextView
+            android:id="@+id/tv_read_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/iv_magazine"
+            android:layout_below="@+id/tv_title_description"
+            android:text="@string/read_more"
+            android:textColor="@color/row_header_color" />
+
+        <View
+            android:id="@+id/view_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_alignEnd="@+id/tv_read_more"
+            android:layout_alignStart="@+id/iv_magazine"
+            android:layout_below="@+id/tv_read_more"
+            android:background="@color/row_header_color" />
+
+        <com.smartit.beunique.components.FontAwesomeIcon
+            android:id="@+id/icon_angle_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/view_divider"
+            android:layout_below="@+id/tv_title_description"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_toEndOf="@+id/tv_read_more"
+            android:textColor="@color/row_header_color"
+            android:textSize="@dimen/_16ssp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

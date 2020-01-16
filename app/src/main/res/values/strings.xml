@@ -1,0 +1,187 @@
+<resources>
+    <string name="app_name" translatable="false">BeUnique</string>
+
+    <string name="letsExploreText">"Let's Explore"</string>
+    <string name="loading">Loading</string>
+    <string name="be">BE</string>
+    <string name="unique">UNIQUE</string>
+    <string name="still_have_not_an_account">STILL HAVE NOT AN ACCOUNT ?</string>
+    <string name="register_now">REGISTER NOW</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="openDrawer" translatable="false">open_drawer</string>
+    <string name="closeDrawer" translatable="false">close_drawer</string>
+
+    <string name="us" translatable="false"> ر.س</string>
+    <string name="Rs" translatable="false">\u20B9</string>
+
+    <string name="reallyExit">Do you really want to exit?</string>
+    <string name="cancel_str">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="no_internet_label">Internet Not Available</string>
+    <string name="check_your_connection">Please check your connection !!!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="select_language">Select Language</string>
+    <string name="select_currency">Select Currency</string>
+
+    <string name="add_to_cart">ADD TO CART</string>
+    <string name="go_to_cart">GO TO CART</string>
+    <string name="reviews">reviews</string>
+    <string name="view_all">VIEW ALL</string>
+    <string name="view_all_str">View all</string>
+    <string name="type">Type</string>
+    <string name="quantity_discount">Quantity Discount</string>
+    <string name="quantity">Quantity</string>
+    <string name="weight">Weight</string>
+    <string name="depth">Depth</string>
+    <string name="height">Height</string>
+    <string name="width">Width</string>
+    <string name="description">Description : </string>
+    <string name="home">Home</string>
+    <string name="account">Account</string>
+    <string name="whatsapp">Message</string>
+    <string name="search">Search</string>
+    <string name="whishlist">Wishlist</string>
+
+    <string name="log_in">LOG IN</string>
+    <string name="forget_your_password">FORGET YOUR PASSWORD ?</string>
+    <string name="password">Password</string>
+    <string name="email_id">Email id</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="register">REGISTER</string>
+    <string name="have_an_account">HAVE AN ACCOUNT?</string>
+    <string name="login_now">LOGIN NOW</string>
+    <string name="search_here">Search Here</string>
+    <string name="free_shipping_to_saudi_arabia">Free Shipping to Saudi Arabia</string>
+    <string name="gift_with_every_order">Gift with every order</string>
+    <string name="hundred_percent_original_brands">100 % original brands</string>
+    <string name="logout">Logout</string>
+
+    <string name="perfumes">Perfumes</string>
+    <string name="hair_perfumes">Hair Perfumes</string>
+    <string name="brands">Brands</string>
+    <string name="magazine">Magazine</string>
+    <string name="languages">Languages</string>
+    <string name="currencies">Currencies</string>
+    <string name="rate_our_app">Rate our App</string>
+
+    <string name="women">Women</string>
+    <string name="men">Men</string>
+    <string name="moods">Moods</string>
+    <string name="by_notes">By Notes</string>
+    <string name="shop_by_price">Shop By Price</string>
+
+    <string name="sureToDelete">Are you sure you want to delete?</string>
+    <string name="articles">ARTICLES</string>
+    <string name="join_us">Join Us</string>
+    <string name="follow_us">Follow us</string>
+    <string name="read_more">Read more</string>
+    <string name="dummy_title_of_video">DUMMY TITLE OF VIDEO</string>
+    <string name="related_products">RELATED PRODUCTS</string>
+    <string name="related_articles">RELATED ARTICLES</string>
+    <string name="reviews_capital">REVIEWS</string>
+    <string name="see_all_reviews">See all reviews</string>
+    <string name="send">Send</string>
+    <string name="comment">Comment</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="min">min</string>
+    <string name="hours_ago">hours ago</string>
+
+    <string name="login_signup">LOGIN / SIGNUP</string>
+    <string name="my_account">My Account</string>
+    <string name="my_order">My Order</string>
+    <string name="address">Address</string>
+    <string name="track_order">Track your order</string>
+    <string name="add_credit_card">Add credit card</string>
+    <string name="affliate_system">Affiliate System</string>
+    <string name="points_system">Points System</string>
+    <string name="recently_viewed">Recently viewed</string>
+    <string name="help_center">Help Center</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to Logout?</string>
+    <string name="welcome">Welcome</string>
+    <string name="change_password">Change Password</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="we_just_need_your_email_address">Please enter your email address. You will receive a link to reset your password in your mail.</string>
+    <string name="save">Save</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email_address">E-mail Address</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="dob">DOB</string>
+    <string name="gender">Gender</string>
+    <string name="no_data_to_display">No data to display</string>
+    <string name="rating">Rating : </string>
+    <string name="date">Date : </string>
+    <string name="likes">Likes : </string>
+    <string name="title">Title : </string>
+    <string name="content">Content : </string>
+    <string name="bottle_size">Bottle size</string>
+    <string name="submit">Submit</string>
+    <string name="your_comment_has_been_added_and_will_be_avaialable">Your comment has been added and will be available once approved by a moderator.</string>
+    <string name="quality">Quality : </string>
+    <string name="product_title">Title * : </string>
+    <string name="your_name">Your Name * : </string>
+    <string name="your_review">Your review * : </string>
+    <string name="start">START</string>
+    <string name="write_your_review">Write your review</string>
+    <string name="write_a_review">Write a review</string>
+    <string name="please_login_first_to_see_your_wishlist">Please login first to see your Wishlist.</string>
+    <string name="do_you_want_to_remove_product_from_wishlist">Do you want to remove product from wishlist.</string>
+    <string name="no_items_in_wishlist">No items in wishlist</string>
+    <string name="please_login_first_to_see_your_points">Please login first to see your points.</string>
+    <string name="no_points">No reward points yet</string>
+    <string name="order_hash" translatable="false">Order#</string>
+    <string name="total_points">Total Points :</string>
+    <string name="no_results_found">No results found</string>
+    <string name="results_found">results found</string>
+    <string name="server_is_under_maintenance">Server is Under Maintenance.</string>
+    <string name="checkout">Checkout</string>
+    <string name="total_price">Total Price</string>
+    <string name="vat_price">Vat Price</string>
+    <string name="shipping_price">Shipping Price</string>
+    <string name="product_price">Product Price</string>
+    <string name="apply">Apply</string>
+    <string name="coupon_code">Coupon code</string>
+    <string name="do_you_want_to_remove_this_item">Do you want to remove this item?</string>
+    <string name="no_items_in_your_bag">No items in your bag</string>
+    <string name="mr">Mr.</string>
+    <string name="mrs">Mrs.</string>
+    <string name="miss">Miss.</string>
+
+
+    <string name="a" translatable="false">A</string>
+    <string name="b" translatable="false">B</string>
+    <string name="c" translatable="false">C</string>
+    <string name="d" translatable="false">D</string>
+    <string name="e" translatable="false">E</string>
+    <string name="f" translatable="false">F</string>
+    <string name="g" translatable="false">G</string>
+    <string name="h" translatable="false">H</string>
+    <string name="i" translatable="false">I</string>
+    <string name="j" translatable="false">J</string>
+    <string name="k" translatable="false">K</string>
+    <string name="l" translatable="false">L</string>
+    <string name="m" translatable="false">M</string>
+    <string name="n" translatable="false">N</string>
+    <string name="o" translatable="false">O</string>
+    <string name="p" translatable="false">P</string>
+    <string name="q" translatable="false">Q</string>
+    <string name="r" translatable="false">R</string>
+    <string name="s" translatable="false">S</string>
+    <string name="t" translatable="false">T</string>
+    <string name="u" translatable="false">U</string>
+    <string name="v" translatable="false">V</string>
+    <string name="w" translatable="false">w</string>
+    <string name="x" translatable="false">X</string>
+    <string name="y" translatable="false">Y</string>
+    <string name="z" translatable="false">Z</string>
+    <string name="four_7_1_1" translatable="false">4</string>
+
+</resources>

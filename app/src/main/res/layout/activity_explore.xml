@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/iv_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:contentDescription="@null"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Inverse"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/letsExploreBtnColor"
+        android:visibility="invisible" />
+
+    <com.smartit.beunique.components.BUniqueTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerInParent="true"
+        android:text="@string/loading"
+        android:textColor="@color/letsExploreBtnColor"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="normal"
+        android:visibility="gone" />
+
+    <com.smartit.beunique.components.BUniqueTextView
+        android:id="@+id/tvLetsExplore"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_80sdp"
+        android:background="@drawable/lets_explore_bg"
+        android:gravity="center"
+        android:padding="@dimen/_7sdp"
+        android:text="@string/letsExploreText"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f18010</color>
+    <color name="colorPrimaryDark">#e26201</color>
+    <color name="colorAccent">#E94C30</color>
+
+
+    <!--MARK: COLOR DEFINED BY SHAHZEB-->
+
+    <color name="letsExploreBtnColor">#FFE65028</color>
+
+    <color name="text_color">#737680</color>
+    <color name="light_gray_color">#d2d5d9</color>
+    <color name="bg_color">#F4F4F4</color>
+    <color name="lightBlack">#808080</color>
+    <color name="gray_default">#cccccc</color>
+    <color name="blackMedium">#2B2B2B</color>
+    <color name="dark_gray">#A9A9A9</color>
+    <color name="green1">#3CBEA4</color>
+    <color name="darkRed">#CE2E22</color>
+    <color name="orangeLight">#F79646</color>
+
+    <color name="placeholder_grey">#AAADC4</color>
+    <color name="placeholder_grey_20">#33AAADC4</color>
+
+    <color name="level_0">#1abc9c</color>
+    <color name="level_1">#3498db</color>
+    <color name="level_2">#e67e22</color>
+    <color name="level_3">#8e44ad</color>
+    <color name="level_4">#f1c40f</color>
+    <color name="level_5">#2ecc71</color>
+    <color name="level_default">#000000</color>
+
+    <color name="row_header_color">#E94C30</color>
+    <color name="magazine_row_color">#dec1bc</color>
+
+
+</resources>

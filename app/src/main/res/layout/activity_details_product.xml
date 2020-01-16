@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            layout="@layout/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/viewPagerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/productViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/noImageAvailable"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/icon_no_image"
+                    android:contentDescription="@null"
+                    android:visibility="gone" />
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/circleIndicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    app:centered="true"
+                    app:fillColor="@color/row_header_color"
+                    app:pageColor="@android:color/black"
+                    app:snap="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/productNameWithPriceLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewPagerLayout">
+
+                <com.smartit.beunique.components.BUniqueTextView
+                    android:id="@+id/tvProductTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:maxLines="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="normal" />
+
+                <com.smartit.beunique.components.BUniqueTextView
+                    android:id="@+id/tv_manufacturer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10ssp"
+                    android:singleLine="true"
+                    android:text="Yves saint laurent"
+                    android:textColor="@color/row_header_color"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+                <com.smartit.beunique.components.BUniqueTextView
+                    android:id="@+id/tv_percentage_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10ssp"
+                    android:singleLine="true"
+                    android:text="Get 30% when you buy"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:id="@+id/layout_price_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10ssp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:orientation="horizontal">
+
+                    <com.smartit.beunique.components.BUniqueTextView
+                        android:id="@+id/tv_main_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal" />
+
+                    <View
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@android:color/black"
+                        android:visibility="visible" />
+
+                    <com.smartit.beunique.components.BUniqueTextView
+                        android:id="@+id/tv_save_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="Save 40 $"
+                        android:textColor="@android:color/black"
+                        android:textStyle=""
+                        android:visibility="visible" />
+
+                    <View
+                        android:id="@+id/view_divider_size"
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:background="@android:color/black"
+                        android:visibility="invisible" />
+
+                    <com.smartit.beunique.components.BUniqueTextView
+                        android:id="@+id/tv_bottle_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/bottle_size"
+                        android:textColor="@android:color/black"
+                        android:visibility="invisible" />
+
+                    <Spinner
+                        android:id="@+id/spinner_select_size"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_likes_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10ssp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight=".40"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.smartit.beunique.components.BUniqueTextView
+                            android:id="@+id/tv_product_likes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            android:singleLine="true"
+                            android:textColor="@color/row_header_color"
+                            android:textSize="@dimen/_12ssp"
+                            android:textStyle="normal" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="@dimen/_30sdp"
+                            android:layout_marginStart="@dimen/_30sdp"
+                            android:background="@android:color/black"
+                            android:visibility="visible" />
+
+                        <com.smartit.beunique.components.BUniqueTextView
+                            android:id="@+id/tv_product_points"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:singleLine="true"
+                            android:text="Points : 0"
+                            android:textColor="@color/row_header_color"
+                            android:textSize="@dimen/_12ssp"
+                            android:textStyle=""
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/product_video_view"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_gravity="center"
+                        android:layout_weight=".60"
+                        android:contentDescription="@null"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productNameWithPriceLayout">
+
+                <com.smartit.beunique.components.BUniqueTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/description"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <com.smartit.beunique.components.BUniqueTextView
+                    android:id="@+id/tv_item_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerProductDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_description">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/reviewAllLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/layout_add_to_cart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerProductDescription"
+                app:layout_constraintVertical_bias="1.0">
+
+                <!--   <RatingBar
+                       android:id="@+id/product_ratingBar"
+                       style="@android:style/Widget.Holo.Light.RatingBar.Small"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginEnd="@dimen/_10sdp"
+                       android:backgroundTint="@color/colorPrimary"
+                       android:progressTint="@color/colorPrimary"
+                       android:secondaryProgressTint="@android:color/transparent"
+                       android:stepSize="0.5" />-->
+
+
+                <com.smartit.beunique.components.BUniqueTextView
+                    android:id="@+id/tv_write_review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:singleLine="true"
+                    android:stepSize="0.5"
+                    android:text="@string/write_your_review"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.smartit.beunique.components.BUniqueTextView
+                        android:id="@+id/tv_view_all_comments"
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/view_all_str"
+                        android:textColor="@color/row_header_color"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="normal" />
+
+                    <View
+                        android:layout_width="@dimen/_43sdp"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/row_header_color" />
+
+                </LinearLayout>
+
+                <com.smartit.beunique.components.BUniqueTextView
+                    android:id="@+id/tv_item_reviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/reviews"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_add_to_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.smartit.beunique.components.BUniqueTextView
+                    android:id="@+id/textViewAddToCart"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:background="@drawable/lets_explore_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/add_to_cart"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+                <com.smartit.beunique.components.BUniqueTextView
+                    android:id="@+id/textViewGoToCart"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:background="@drawable/lets_explore_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/go_to_cart"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+                <com.smartit.beunique.components.FontAwesomeIcon
+                    android:id="@+id/font_wishlist"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:text="@string/icon_whishlist"
+                    android:textSize="@dimen/_22ssp"
+                    android:visibility="visible" />
+
+                <com.smartit.beunique.components.FontAwesomeIcon
+                    android:id="@+id/font_wishlist_fill"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:text="@string/icon_whishlist_fill"
+                    android:textColor="@color/row_header_color"
+                    android:textSize="@dimen/_22ssp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>
+
